@@ -1,0 +1,366 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.bg {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #71bad7;
+}
+
+.bg-dark {
+  background: #244a59;
+}
+
+.calc {
+  width: 375px;
+  height: 712px;
+  background: linear-gradient(167.27deg, #F7F8FB -5.94%, rgba(247, 248, 251, 0.19) 103.62%);
+  backdrop-filter: blur(51px);
+  border-radius: 39px;
+  padding: 10px 38px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.calc-dark {
+  width: 375px;
+  height: 712px;
+  background: linear-gradient(191.34deg, #17181A -4.95%, #17181A 103.74%);
+  backdrop-filter: blur(51px);
+  border-radius: 39px;
+  padding: 10px 38px;
+}
+
+.calc-text {
+  width: 100%;
+  height: 270px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  border-radius: 39px;
+  text-align: right;
+  font-size: 48px;
+  color: black;
+  padding: 0px 2px;
+}
+
+.calc-text-dark {
+  color:#29A8FF;
+}
+
+.buttons {
+  width: 308px;
+  height: 402px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.btn-theme {
+  width: 62px;
+  height: 62px;;
+  background: rgb(226, 226, 226);
+  border-radius: 16px;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img {
+  width: 35px;
+  height: 35px;
+  background: url(./br.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.btn-theme-dark {
+  background: #303136;
+}
+
+.img-dark {
+  width: 35px;
+  height: 35px;
+  background: url(./nt.png);
+  filter: brightness(0) invert(1);
+  background-size: cover;
+  background-position: center;
+}
+
+  
+.btn {
+  width: 62px;
+  height: 62px;;
+  border: none;
+  background: rgb(226, 226, 226);
+  backdrop-filter: blur(6px);
+  border-radius: 16px;
+  cursor: pointer;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 48px;
+  color: #FFFFFF;
+}
+
+.btn-dark {
+  width: 62px;
+  height: 62px;;
+  background: #303136;
+  color: #29A8FF;
+}
+
+
+.btn:nth-child(1) {
+  background-color: orange;
+  grid-column: span 2;
+  color: white;
+  width: 144px;
+}
+
+
+.btn-several {
+  background-color: rgb(18, 160, 255);
+}
+
+
+.btn:nth-child(17) {
+  grid-column-start: 1;
+  grid-row-start: 5;
+}
+
+.btn:nth-child(16) {
+  grid-column-start: 2;
+  grid-row-start: 5;
+}
+
+.blue-btn {
+  background: rgb(0, 204, 255);
+  color: white;
+}
+
+.btn-equal {
+  grid-column-start: 4;
+  grid-row: span 2;
+  height: 144px;
+  background: rgb(18, 160, 255);
+  border: none;
+  backdrop-filter: blur(6px);
+  border-radius: 16px;
+  cursor: pointer;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 48px;
+  color: #FFFFFF;
+}
+
+.grey {
+  background:rgb(0, 204, 255);
+  color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:500px) {
+
+  .bg {
+    width: 100%;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #71bad7;
+  }
+
+  .calc {
+    width: 300px;
+    height: 532px;
+    background: linear-gradient(167.27deg, #F7F8FB -5.94%, rgba(247, 248, 251, 0.19) 103.62%);
+    backdrop-filter: blur(51px);
+    border-radius: 32px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .calc-dark {
+    background: linear-gradient(191.34deg, #17181A -4.95%, #17181A 103.74%);
+  }
+  
+  .calc-text {
+    width: 100%;
+    height: 200px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border-radius: 32px;
+    text-align: right;
+    font-size: 42px;
+    color: black;
+    padding: 0px 2px;
+  }
+  
+  .calc-text-dark {
+    color:#29A8FF;
+  }
+  
+  .buttons {
+    width: 249px;
+    height: 312px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 5px;
+  }
+  
+  .btn-theme {
+    width: 55px;
+    height: 55px;;
+    background: rgb(226, 226, 226);
+    border-radius: 16px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .img {
+    width: 35px;
+    height: 35px;
+    background: url(./br.png);
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .btn-theme-dark {
+    background: #303136;
+  }
+  
+  .img-dark {
+    width: 35px;
+    height: 35px;
+    background: url(./nt.png);
+    filter: brightness(0) invert(1);
+    background-size: cover;
+    background-position: center;
+  }
+  
+    
+  .btn {
+    width: 55px;
+    height: 55px;;
+    border: none;
+    background: rgb(226, 226, 226);
+    backdrop-filter: blur(6px);
+    border-radius: 16px;
+    cursor: pointer;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 48px;
+    color: #FFFFFF;
+  }
+  
+  .btn-dark {
+    width: 62px;
+    height: 62px;;
+    background: #303136;
+    color: #29A8FF;
+  }
+  
+  
+  .btn:nth-child(1) {
+    background-color: orange;
+    grid-column: span 2;
+    color: white;
+    width: 119px;
+  }
+  
+  
+  .btn-several {
+    background-color: rgb(18, 160, 255);
+  }
+  
+  
+  .btn:nth-child(17) {
+    grid-column-start: 1;
+    grid-row-start: 5;
+  }
+  
+  .btn:nth-child(16) {
+    grid-column-start: 2;
+    grid-row-start: 5;
+  }
+  
+  .blue-btn {
+    background: rgb(0, 204, 255);
+    color: white;
+  }
+  
+  .btn-equal {
+    grid-column-start: 4;
+    grid-row: span 2;
+    width: 55px;
+    height: 119px;
+    background: rgb(18, 160, 255);
+    border: none;
+    backdrop-filter: blur(6px);
+    border-radius: 16px;
+    cursor: pointer;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 48px;
+    color: #FFFFFF;
+  }
+  
+  .grey {
+    background:rgb(0, 204, 255);
+    color: white;
+  }
+}
